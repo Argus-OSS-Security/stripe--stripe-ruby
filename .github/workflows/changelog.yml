@@ -1,11 +1,12 @@
 name: Changelog
 
-on:
-  pull_request:
-    # opened, synchronize and reopened are the defaults; `edited` is what makes this
-    # re-run when someone toggles an opt-out box in the description
-    types: [opened, synchronize, reopened, edited]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     # opened, synchronize and reopened are the defaults; `edited` is what makes this
+#     # re-run when someone toggles an opt-out box in the description
+#     types: [opened, synchronize, reopened, edited]
+# 
 permissions: {}
 
 jobs:

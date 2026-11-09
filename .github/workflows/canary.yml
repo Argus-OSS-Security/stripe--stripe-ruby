@@ -3,14 +3,15 @@ name: Canary CI
 # Runs the same checks as CI against code generated from the canary specs.
 # sdk-codegen force-pushes these branches; they are never released, so there is
 # no publish job.
-on:
-  workflow_dispatch: {}
-  push:
-    branches:
-      - canary-ga
-      - canary-beta
-      - canary-private-preview
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch: {}
+#   push:
+#     branches:
+#       - canary-ga
+#       - canary-beta
+#       - canary-private-preview
+# 
 permissions: {}
 
 concurrency:
